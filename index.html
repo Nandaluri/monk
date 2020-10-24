@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preload stylesheet" href="./style.css" as="stylesheet" />
+    
   </head>
   <body>
     <div class="images">
-      <img id="bg" src="./pexels-pixabay-355508 (1).jpg" alt="" />
-      <img id="mountain" src="./mountain_PNG18.png" alt="" />
+      <img rel="preload" id="bg" src="./pexels-pixabay-355508 (1).jpg" alt="" />
+      <img rel="preload" id="mountain" src="./mountain_PNG18.png" alt="" />
       <h2 id="texth2" class="texth2">HYOGA</h2>
-      <img id="monk" src="./pexels-amy-chandra-773013.png" alt="" />
+      <img rel="preload" id="monk" src="./pexels-amy-chandra-773013.png" alt="" />
     </div>
     <div class="text"></div>
     <script src="app.js"></script>
