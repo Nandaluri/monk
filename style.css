@@ -64,7 +64,7 @@ nav {
   bottom: 0;
   width: 100vw;
   height: 100px;
-  background: linear-gradient(to top, rgb(164, 111, 46), transparent);
+  background: linear-gradient(to top, white, transparent);
   z-index: 10000;
 }
 #texth2 {
@@ -76,5 +76,5 @@ nav {
 .text {
   height: 200vh;
   width: 100vw;
-  background-color: rgb(164, 111, 46);
+  background-color: white;
 }
