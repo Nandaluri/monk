@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,30 +15,57 @@ nav {
   top: 0;
   left: 0;
   z-index: 200000;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 60px;
-  width: 90vw;
+  height: 60px;
+  width: 100vw;
 }
-.logo{
-  grid-column-start: 2;
-  grid-column-end: 5;
+.hamburger {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: inherit;
+  cursor: pointer;
+}
+.hamburger div {
+  margin: 5px 0px;
+  width: 40px;
+  height: 4px;
+  background-color: black;
+}
+.logo {
+  margin-left: 20px;
+  width: 200px;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 3rem;
-  font-weight: bolder;
 }
-.list{
-  grid-column-start: 6;
-  grid-column-end: 13;
-  display: grid;
-  grid-template-rows: 60px;
-  grid-template-columns: repeat(4, 1fr);
+.list {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  grid-template-columns: 100vw;
+  grid-template-rows: repeat(6, 1fr);
+  height: 100vh;
+  /*background-color: rgb(28, 28, 28);*/
+  backdrop-filter: blur(20px);
+  color: rgb(38, 38, 38);
 }
-.item{
+.item {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-
+  font-size: 3rem;
+}
+.item:hover {
+  background-color: teal;
 }
 .images {
   height: 100vh;
@@ -74,17 +101,19 @@ nav {
   z-index: 10000;
 }
 #texth2 {
-  top: 10vh;
-  position: absolute;
-  font-size: 7rem;
-  color: rgba(26, 26, 26, 0.755);
+  padding: 50px;
+  max-width: 700px;
+  font-size: 3.5rem;
+  color: rgba(255, 255, 255, 0.934);
+  z-index: 20000;
+  text-align: center;
 }
-.text{
+.text {
   width: 100%;
   height: 20vh;
   background-color: rgb(29, 29, 29);
 }
-.section2{
+.section2 {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -97,4 +126,9 @@ nav {
   height: 100px;
   background: linear-gradient(to bottom, rgb(29, 29, 29), transparent);
   z-index: 10000;
+}
+.item4 {
+  grid-row-start: 5;
+  grid-row-end: 7;
+  background-color: rgba(252, 88, 88, 0.536);
 }
