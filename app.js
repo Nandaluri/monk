@@ -7,10 +7,10 @@ const list = document.querySelector(".list");
 const close = document.querySelector(".item4");
 
 hamburger.addEventListener("click", () => {
-  list.style.display = "grid";
+  list.style.transform = "translateY(0%)";
 });
 close.addEventListener("click", () => {
-  list.style.display = "none";
+  list.style.transform = "translateY(-100%)";
 });
 
 window.addEventListener("scroll", function (e) {
