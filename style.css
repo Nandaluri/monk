@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charm&display=swap");
 
 * {
   margin: 0;
@@ -12,13 +13,14 @@ body {
   flex-direction: column;
 }
 nav {
-  position: absolute;
-  background-color: transparent;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.15);
   top: 0;
   left: 0;
   z-index: 200000;
   height: 60px;
   width: 100vw;
+  transition: linear background-color 0.3s;
 }
 .hamburger {
   position: absolute;
@@ -36,8 +38,7 @@ nav {
   margin: 5px 0px;
   width: 40px;
   height: 4px;
-  background-color: black;
-  border-radius: 30px;
+  background-color: rgb(230, 230, 230);
 }
 .logo {
   margin-left: 20px;
@@ -48,7 +49,8 @@ nav {
   align-items: center;
   font-size: 3rem;
   font-family: "Poppins", sans-serif;
-  font-weight: bolder;
+  font-weight: normal;
+  color: rgb(230, 230, 230);
 }
 .list {
   display: grid;
@@ -75,7 +77,7 @@ nav {
   background-color: teal;
 }
 .images {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -83,6 +85,14 @@ nav {
   justify-content: center;
   align-items: center;
   will-change: contents;
+}
+.images:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 30000;
 }
 .images img {
   object-fit: cover;
@@ -100,28 +110,37 @@ nav {
 }
 #texth2 {
   padding: 50px;
-  max-width: 700px;
+  max-width: 800px;
   font-size: 3.5rem;
-  color: rgba(0, 255, 21, 0.795);
-  z-index: 20000;
+  color: rgb(230, 230, 230);
+  z-index: 30001;
   text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-}
-.seperator {
-  width: 100%;
-  height: 5vh;
-  background-color: rgb(21, 56, 32);
-}
-.section2 {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  height: 800px;
-  background-color: rgb(21, 56, 32);
+  font-family: "Charm", cursive;
+  letter-spacing: 2px;
 }
 .item4 {
   grid-row-start: 5;
   grid-row-end: 7;
   background-color: rgba(252, 88, 88, 0.536);
+}
+#innermind {
+  color: rgb(43, 224, 170);
+}
+
+/*Section 2*/
+
+.section2 {
+  width: 100%;
+  height: 800px;
+  background-color: rgb(71, 153, 127);
+  box-shadow: inset 0px 20px 20px -10px rgba(0, 0, 0, 1);
+  padding-top: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  #texth2 {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+  }
 }
