@@ -8,13 +8,9 @@ let nav = document.querySelector("#nav");
 
 hamburger.addEventListener("click", () => {
   list.style.transform = "translateY(0%)";
-  list.style.visibility = "visible";
 });
 close.addEventListener("click", () => {
   list.style.transform = "translateY(-100%)";
-  setTimeout(() => {
-    list.style.visibility = "hidden";
-  }, 500);
 });
 
 window.addEventListener("scroll", () => {
@@ -27,4 +23,8 @@ window.addEventListener("scroll", () => {
   bg.style.transform = "translateY(" + value + "px)";
   mountain.style.transform = "translateY(" + value * 0.7 + "px)";
   monk.style.transform = "translateY(" + value * 0.2 + "px)";
+});
+list.addEventListener("load", () => {
+  list.style.display = "grid";
+  list.removeEventListener("load");
 });
