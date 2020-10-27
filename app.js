@@ -5,6 +5,7 @@ let hamburger = document.querySelector(".hamburger");
 let list = document.querySelector(".list");
 let close = document.querySelector(".item4");
 let nav = document.querySelector("#nav");
+let body = document.querySelector("body");
 
 hamburger.addEventListener("click", () => {
   list.style.transform = "translateY(0%)";
@@ -24,7 +25,6 @@ window.addEventListener("scroll", () => {
   mountain.style.transform = "translateY(" + value * 0.7 + "px)";
   monk.style.transform = "translateY(" + value * 0.2 + "px)";
 });
-list.addEventListener("load", () => {
+body.addEventListener("load", () => {
   list.style.display = "grid";
-  list.removeEventListener("load");
 });
