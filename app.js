@@ -25,6 +25,6 @@ window.addEventListener("scroll", () => {
   mountain.style.transform = "translateY(" + value * 0.7 + "px)";
   monk.style.transform = "translateY(" + value * 0.2 + "px)";
 });
-body.addEventListener("load", () => {
+window.addEventListener("load", () => {
   list.style.display = "grid";
 });
