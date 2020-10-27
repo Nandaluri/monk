@@ -1,6 +1,5 @@
 const bg = document.querySelector("#bg");
 const mountain = document.querySelector("#mountain");
-const text = document.querySelector("#texth2");
 const monk = document.querySelector("#monk");
 const hamburger = document.querySelector(".hamburger");
 const list = document.querySelector(".list");
@@ -14,7 +13,7 @@ close.addEventListener("click", () => {
   list.style.transform = "translateY(-100%)";
 });
 
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", () => {
   var value = window.scrollY;
   if (value > 0) {
     nav.style.backgroundColor = "rgba(30, 30, 30, 1)";
@@ -23,6 +22,5 @@ window.addEventListener("scroll", function () {
   }
   bg.style.transform = "translateY(" + value + "px)";
   mountain.style.transform = "translateY(" + value * 0.7 + "px)";
-  //text.style.transform = "translateY(" + value * 1.1 + "px)";
   monk.style.transform = "translateY(" + value * 0.2 + "px)";
 });
