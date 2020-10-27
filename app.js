@@ -1,16 +1,20 @@
-const bg = document.querySelector("#bg");
-const mountain = document.querySelector("#mountain");
-const monk = document.querySelector("#monk");
-const hamburger = document.querySelector(".hamburger");
-const list = document.querySelector(".list");
-const close = document.querySelector(".item4");
-const nav = document.querySelector("#nav");
+let bg = document.querySelector("#bg");
+let mountain = document.querySelector("#mountain");
+let monk = document.querySelector("#monk");
+let hamburger = document.querySelector(".hamburger");
+let list = document.querySelector(".list");
+let close = document.querySelector(".item4");
+let nav = document.querySelector("#nav");
 
 hamburger.addEventListener("click", () => {
   list.style.transform = "translateY(0%)";
+  list.style.visibility = "visible";
 });
 close.addEventListener("click", () => {
   list.style.transform = "translateY(-100%)";
+  setTimeout(() => {
+    list.style.visibility = "hidden";
+  }, 500);
 });
 
 window.addEventListener("scroll", () => {

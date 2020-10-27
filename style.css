@@ -58,6 +58,7 @@ nav {
 }
 .list {
   display: grid;
+  visibility: hidden;
   position: fixed;
   top: 0px;
   left: 0;
@@ -68,7 +69,7 @@ nav {
   backdrop-filter: blur(20px);
   color: rgb(255, 255, 255);
   transform: translateY(-100%);
-  transition: ease-in transform 0.3s;
+  transition: ease-in all 0.3s;
 }
 .item {
   display: flex;
