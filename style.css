@@ -57,8 +57,7 @@ nav {
   color: rgb(230, 230, 230);
 }
 .list {
-  display: grid;
-  visibility: hidden;
+  display: none;
   position: fixed;
   top: 0px;
   left: 0;

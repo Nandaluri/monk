@@ -8,12 +8,12 @@ let nav = document.querySelector("#nav");
 
 hamburger.addEventListener("click", () => {
   list.style.transform = "translateY(0%)";
-  list.style.visibility = "visible";
+  list.style.display = "grid";
 });
 close.addEventListener("click", () => {
   list.style.transform = "translateY(-100%)";
   setTimeout(() => {
-    list.style.visibility = "hidden";
+    list.style.display = "none";
   }, 500);
 });
 
