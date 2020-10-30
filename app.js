@@ -3,7 +3,7 @@ let mountain = document.querySelector("#mountain");
 let monk = document.querySelector("#monk");
 let hamburger = document.querySelector(".hamburger");
 let list = document.querySelector(".list");
-let close = document.querySelector(".item4");
+let close = document.querySelector(".item");
 let nav = document.querySelector("#nav");
 let body = document.querySelector("body");
 let logo = document.querySelector(".logo");
@@ -11,7 +11,8 @@ let logo = document.querySelector(".logo");
 hamburger.addEventListener("click", () => {
   list.style.transform = "translateY(0%)";
 });
-close.addEventListener("click", () => {
+
+list.addEventListener("click", () => {
   list.style.transform = "translateY(-100%)";
 });
 
