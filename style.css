@@ -124,7 +124,7 @@ nav {
   cursor: default;
   margin-top: 150px;
   background-color: rgba(30, 30, 30, 0.5);
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 20px;
 }
 .item4 {
@@ -144,11 +144,11 @@ nav {
   width: 200px;
   height: 70px;
   border: 2px solid rgb(43, 224, 170);
-  border-radius: 30px;
   z-index: 30002;
   transition: all 0.5s;
   cursor: pointer;
   margin-top: 20px;
+  border-radius: 15px;
 }
 a {
   text-decoration: none;
@@ -156,7 +156,6 @@ a {
 .learn-more-button:hover {
   background-color: rgb(43, 224, 170);
   color: rgb(30, 30, 30);
-  border: 2px solid black;
 }
 
 /*Section 2*/
@@ -165,12 +164,34 @@ a {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(auto-fill, minmax(min(600px, 100%), 1fr));
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(230, 230, 230);
   box-shadow: inset 0px 20px 20px -10px rgba(0, 0, 0, 1);
   padding-top: 30px;
 }
 .gridelement {
-  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(30, 30, 30);
+}
+.gridelement h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(43, 224, 170);
+}
+.gridelement p {
+  margin-top: 20px;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+}
+#video {
+  width: 100%;
+  box-shadow: 0px 0px 20px 0px black;
+  border-radius: 15px;
 }
 
 @media only screen and (min-width: 768px) {
