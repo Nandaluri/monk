@@ -192,8 +192,15 @@ a {
   width: 100%;
   box-shadow: 0px 0px 20px 0px black;
   border-radius: 15px;
+  margin-bottom: 30px;
 }
-
+.icons {
+  margin-top: 20px;
+}
+.icons img {
+  cursor: pointer;
+  border-radius: 50%;
+}
 @media only screen and (min-width: 768px) {
   #texth2 {
     position: absolute;
