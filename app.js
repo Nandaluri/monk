@@ -6,6 +6,7 @@ let list = document.querySelector(".list");
 let close = document.querySelector(".item4");
 let nav = document.querySelector("#nav");
 let body = document.querySelector("body");
+let logo = document.querySelector(".logo");
 
 hamburger.addEventListener("click", () => {
   list.style.transform = "translateY(0%)";
@@ -17,9 +18,11 @@ close.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   var value = window.scrollY;
   if (value > 0) {
-    nav.style.backgroundColor = "rgba(30, 30, 30, 1)";
+    nav.style.backgroundColor = "rgba(230, 230, 230, 1)";
+    logo.style.color = "rgb(43, 224, 170)";
   } else if (value === 0) {
     nav.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
+    logo.style.color = "rgb(230, 230, 230)";
   }
   bg.style.transform = "translateY(" + value + "px)";
   mountain.style.transform = "translateY(" + value * 0.7 + "px)";
