@@ -196,6 +196,12 @@ a {
   letter-spacing: 1px;
   font-size: 1.4rem;
 }
+.gridelement iframe{
+  width: 100vw;
+}
+.bg-grey{
+  background-color: rgb(220, 220, 220);
+}
 #video {
   width: 100%;
   box-shadow: 0px 0px 20px 0px black;

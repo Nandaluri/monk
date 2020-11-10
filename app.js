@@ -19,7 +19,7 @@ list.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   var value = window.scrollY;
   if (value > 0) {
-    nav.style.backgroundColor = "rgba(230, 230, 230, 1)";
+    nav.style.backgroundColor = "rgba(255, 255, 255, 1)";
     logo.style.color = "rgb(43, 224, 170)";
   } else if (value === 0) {
     nav.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
